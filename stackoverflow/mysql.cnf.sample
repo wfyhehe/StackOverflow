@@ -1,0 +1,5 @@
+[client]
+database = stackoverflow
+user = root
+password = yourpwd
+default-character-set = utf8
