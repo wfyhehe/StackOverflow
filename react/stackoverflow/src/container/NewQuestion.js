@@ -2,6 +2,7 @@ import {Component} from "react";
 import {Link} from "react-router-dom";
 import {Button, Card, Form, Input, message, Space} from 'antd';
 import {postQuestion} from "../api";
+import './styles/NewQuestion.css';
 
 export default class QuestionList extends Component {
   onFinish = valueObj => {
@@ -26,8 +27,6 @@ export default class QuestionList extends Component {
       >
         <Form
           name="basic"
-          labelCol={{span: 8, offset: 0}}
-          wrapperCol={{span: 8, offset: 0}}
           onFinish={this.onFinish}
           autoComplete="off"
         >
@@ -35,14 +34,12 @@ export default class QuestionList extends Component {
             <Input placeholder="Enter the question title" />
           </Form.Item>
           <Form.Item name="content">
-            <Input.TextArea rows={4} placeholder="Write your question here" />
+            <Input.TextArea rows={8} placeholder="Write your question here" />
           </Form.Item>
-          <Form.Item wrapperCol={{offset: 8, span: 16}}>
-            <Space>
-              <Button type="primary" htmlType="submit">
-                Post
-              </Button>
-            </Space>
+          <Form.Item wrapperCol={{span: 24, 'flex-direction': 'right'}}>
+            <Button type="primary" htmlType="submit">
+              Post
+            </Button>
           </Form.Item>
         </Form>
       </Card>

@@ -13,11 +13,6 @@ export default class QuestionList extends Component {
 
   componentDidMount() {
     listQuestion().then(data => {
-      // const questions = data.data.map(q => {
-      //   console.log(q);
-      //   return q;
-      // });
-      // console.log(questions);
       this.setState({questions: data.data});
     }).catch(err => {
       message.error("Failed to load questions");

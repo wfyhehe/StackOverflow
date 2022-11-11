@@ -34,7 +34,7 @@ export default class CenterPage extends Component {
           <img className="stackoverflow-center-page-banner-image" src="/banner.jpg" alt="banner" />
         </Header>
         <Layout className="stackoverflow-center-page-layout">
-          <Content>
+          <Content className="stackoverflow-center-page-content">
             <Router />
           </Content>
           <Sider className="stackoverflow-center-page-sider">

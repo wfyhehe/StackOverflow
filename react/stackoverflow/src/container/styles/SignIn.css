@@ -8,10 +8,10 @@
 .stackoverflow-sign-in button {
   border-radius: 25px;
   border-color: unset;
-  background: rgb(69, 82, 210);
+  background: #6074DD;;
 }
 
 .stackoverflow-sign-in button:hover {
   border-color: unset;
-  background: rgb(69, 82, 210);
+  background: #6074DD;;
 }

@@ -7,7 +7,7 @@
 }
 .stackoverflow-home-layout-header {
   height: 90px!important;
-  background-color: #dcdcdc!important;
+  background-color: #e7e7e7 !important;
   display: flex!important;
   flex-direction: row-reverse!important;
 }
@@ -17,9 +17,9 @@
   margin: 28px 15%;
   padding: 5px 12px;
   color: white;
-  border-radius: 100px;
+  border-radius: 25px;
   text-decoration: none;
-  background-color: rgb(69, 82, 210);
+  background-color: #6074DD;;
 }
 
 p {

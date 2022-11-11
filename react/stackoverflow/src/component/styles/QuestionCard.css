@@ -1,3 +1,24 @@
 .stackoverflow-question-card {
+  border-radius: 25px;
+  margin-bottom: 24px;
+  background-color: white;
+  padding: 24px;
+}
 
+.stackoverflow-question-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.stackoverflow-question-card-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.stackoverflow-question-card-lower > .stackoverflow-question-card-askedby {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
 }
