@@ -1,17 +1,6 @@
 .stackoverflow-new-question {
   border-radius: 25px !important;
 }
-.stackoverflow-new-question a {
-  color: #6074DD;;
-}
 .stackoverflow-new-question button {
-  border-radius: 25px;
-  border-color: unset;
   float: right;
-  background: #6074DD;;
-}
-
-.stackoverflow-new-question button:hover {
-  border-color: unset;
-  background: #6074DD;;
 }

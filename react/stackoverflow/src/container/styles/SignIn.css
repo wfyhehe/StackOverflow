@@ -1,17 +1,9 @@
 .stackoverflow-sign-in {
   background: white;
-  padding: 50px 0 10px 0;
-  margin-right: 20px;
+  padding: 24px;
   border-radius: 25px;
 }
-
-.stackoverflow-sign-in button {
-  border-radius: 25px;
-  border-color: unset;
-  background: #6074DD;;
-}
-
-.stackoverflow-sign-in button:hover {
-  border-color: unset;
-  background: #6074DD;;
+.stackoverflow-sign-in a {
+  font-size: 20px;
+  color: #6074DD;
 }
