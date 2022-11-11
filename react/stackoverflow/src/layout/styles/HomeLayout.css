@@ -24,7 +24,11 @@
   text-decoration: none;
   background-color: #6074DD;
 }
-
+@media screen and (max-width: 768px) {
+  .stackoverflow-center-page-layout{
+    flex-direction: column!important;
+  }
+}
 p {
   font-family: "Poppins", "Rubik", sans-serif;
 }
