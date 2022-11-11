@@ -1,0 +1,12 @@
+.ant-layout-sider-dark {
+  background-color: transparent!important;
+}
+.stackoverflow-top-experts-card {
+  border-radius: 25px!important;
+}
+
+.stackoverflow-top-experts-card .ant-card-body{
+  font-size: 15px;
+  line-height: 16px;
+  padding: 16px;
+}

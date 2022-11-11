@@ -19,3 +19,9 @@
   width: 70%;
   margin: 40px 15%;
 }
+
+.stackoverflow-center-page-sider {
+  flex: 0 0 35% !important;
+  max-width: 350px !important;
+  min-width: 200px !important;
+}

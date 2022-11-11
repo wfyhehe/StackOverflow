@@ -1,3 +1,28 @@
-.stackoverflow-question-user-brief {
+.stackoverflow-user-brief {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  margin: 0 0 20px 0;
+  line-height: 16px;
+}
 
+.stackoverflow-user-brief img {
+  width: 48px;
+  height: 48px;
+}
+
+.stackoverflow-user-brief-username {
+  font-style: normal;
+  font-weight: 700;
+  color: #6074DD;
+  font-size: 16px;
+  padding: 5px;
+  margin: 0;
+}
+
+.stackoverflow-user-brief-extra-data {
+  color: #969696;
+  font-size: 14px;
+  padding: 5px 0 0 5px;
+  margin: 0;
 }

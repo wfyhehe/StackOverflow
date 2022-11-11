@@ -1,0 +1,19 @@
+.ant-layout-sider-dark {
+  background-color: transparent !important;
+}
+
+.stackoverflow-about-card {
+  border-radius: 25px !important;
+  margin-bottom: 24px !important;
+}
+
+.stackoverflow-about-card .ant-card-body {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 24px;
+}
+
+.stackoverflow-about-card p {
+  color: #51646D;
+  font-weight: 500;
+}

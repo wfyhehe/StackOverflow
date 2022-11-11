@@ -1,6 +1,8 @@
 import {Component} from "react";
 import PropTypes from 'prop-types';
 import {Card} from "antd";
+import './styles/About.css';
+
 export default class About extends Component {
   static propTypes = {
     // TODO: some npm library convert num->xxk or xxM
@@ -10,6 +12,7 @@ export default class About extends Component {
     upvoteCountInK: PropTypes.number.isRequired,
     tokenAwardedInK: PropTypes.number.isRequired,
   };
+
   constructor(props) {
     super(props);
   }

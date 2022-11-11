@@ -21,3 +21,7 @@
   text-decoration: none;
   background-color: rgb(69, 82, 210);
 }
+
+p {
+  font-family: "Poppins", "Rubik", sans-serif;
+}
