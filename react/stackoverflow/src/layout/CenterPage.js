@@ -17,7 +17,7 @@ export default class CenterPage extends Component {
             <Router />
           </Content>
           <Sider>
-            <About />
+            <About expertCount={246} qnaCountInK={100} upvoteCountInK={50} tokenAwardedInK={145} />
           </Sider>
         </Layout>
       </div>

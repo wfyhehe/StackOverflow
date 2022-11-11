@@ -1,16 +1,17 @@
 import {Component} from "react";
-import {Link, Redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Button, Card, Form, Input, message, Space} from 'antd';
-import {signIn} from "../api";
+import {postQuestion} from "../api";
 
 export default class QuestionList extends Component {
   onFinish = valueObj => {
-    signIn(valueObj.title, valueObj.content).then(data => {
-      localStorage.setItem('token', data.data.token);
+    postQuestion(valueObj.title, valueObj.content).then(data => {
+      window.location.href = '/';
     }).catch(err => {
-      localStorage.removeItem('token');
+      message.error("failed to post question");
     })
   };
+
   render() {
     // TODO: use a store like Redux to store user status signed in or not
     if (!localStorage.getItem('token')) {

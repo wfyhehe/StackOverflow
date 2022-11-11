@@ -1,10 +1,10 @@
 import {Component} from "react";
 import {Button, Form, Input, message, Space} from "antd";
 import {signIn} from "../api";
+import './styles/SignIn.css';
 
 export default class SignIn extends Component {
   componentDidMount() {
-    console.log('mount')
     const next = this.getNext();
     if (next && next === '/post') {
       message.info('Sign in to ask a question');
@@ -27,8 +27,6 @@ export default class SignIn extends Component {
   };
 
   render() {
-
-
     return (
       <div className="stackoverflow-sign-in">
         <Form
