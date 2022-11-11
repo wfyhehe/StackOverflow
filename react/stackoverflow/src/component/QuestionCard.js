@@ -7,7 +7,7 @@ export default class QuestionCard extends Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-    user: PropTypes.object.isRequired,
+    author: PropTypes.object.isRequired,
     createdAt: PropTypes.string.isRequired,
   };
 
@@ -23,7 +23,7 @@ export default class QuestionCard extends Component {
           <p className="stackoverflow-question-card-content">{this.props.content}</p>
         </div>
         <div className="stackoverflow-question-card-lower">
-          <UserBrief user={this.props.user} showQA={true} />
+          <UserBrief userDetail={this.props.author} showQA={true} />
         </div>
       </div>
     );

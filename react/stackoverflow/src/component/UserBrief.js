@@ -17,18 +17,18 @@ export default class UserBrief extends Component {
     const user = this.props.userDetail;
     const extraData = this.props.showQA ? (
       <p className="stackoverflow-question-card-content">
-        {user.answer_amount} Answers, {user.question_amount} Question
+        {user ? user.answer_amount : '?'} Answers, {user ? user.question_amount : '?'} Question
       </p>
     ) : (
       <p className="stackoverflow-question-card-content">
-        {user.up_amount} ↑, collected
+        {user ? user.up_amount : '?'} ↑, collected
       </p>
     );
     return (
       <div className="stackoverflow-user-brief">
-        <img src={user.avatar} alt="avatar" />
+        <img src={user ? user.avatar : '/moonbird.png'} alt="avatar" />
         <div className="stackoverflow-question-card-upper">
-          <p className="stackoverflow-user-brief-username">{user.first_name}</p>
+          <p className="stackoverflow-user-brief-username">{user ? user.first_name : 'Unknown'}</p>
           {extraData}
         </div>
       </div>
