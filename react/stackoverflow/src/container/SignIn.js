@@ -1,18 +1,34 @@
 import {Component} from "react";
-import {Button, Form, Input, Space} from "antd";
+import {Button, Form, Input, message, Space} from "antd";
 import {signIn} from "../api";
 
 export default class SignIn extends Component {
+  componentDidMount() {
+    console.log('mount')
+    const next = this.getNext();
+    if (next && next === '/post') {
+      message.info('Sign in to ask a question');
+    }
+  }
 
-  onFinish = (valueObj) => {
+  getNext = () => {
+    const queryObj = new window.URLSearchParams(window.location.search);
+    return queryObj.get('next') || '/';
+  }
+
+  onFinish = valueObj => {
     signIn(valueObj.username, valueObj.password).then(data => {
       localStorage.setItem('token', data.data.token);
+      window.location.href = this.getNext();
     }).catch(err => {
       localStorage.removeItem('token');
+      message.error('Incorrect username or password');
     })
   };
 
   render() {
+
+
     return (
       <div className="stackoverflow-sign-in">
         <Form

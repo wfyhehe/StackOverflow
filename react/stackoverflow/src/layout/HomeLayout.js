@@ -11,7 +11,7 @@ export default class HomeLayout extends Component {
       <div className="stackoverflow-home-layout">
         <Layout>
           <Header className="stackoverflow-home-layout-header">
-            <Link className="stackoverflow-home-layout-header-link" to="signin">Ask a question</Link>
+            <Link className="stackoverflow-home-layout-header-link" to="post">Ask a question</Link>
           </Header>
           <Content>
             <CenterPage />

@@ -1,14 +1,21 @@
+.ant-layout-header.stackoverflow-home-layout-header {
+  height: unset;
+  padding: unset;
+  color: unset;
+  line-height: unset;
+  background: unset;
+}
 .stackoverflow-home-layout-header {
-  height: 90px;
-  background-color: #dcdcdc;
-  display: flex;
-  flex-direction: row-reverse;
+  height: 90px!important;
+  background-color: #dcdcdc!important;
+  display: flex!important;
+  flex-direction: row-reverse!important;
 }
 
 .stackoverflow-home-layout-header-link {
   font-size: 14px;
   margin: 28px 2%;
-  padding: 8px 12px;
+  padding: 5px 12px;
   color: white;
   border-radius: 100px;
   text-decoration: none;

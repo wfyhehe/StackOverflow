@@ -5,10 +5,10 @@ export default class About extends Component {
   static propTypes = {
     // TODO: some npm library convert num->xxk or xxM
     //        e.g. 11,345 -> 11k, 58,122,987 -> 58M
-    expertCount: PropTypes.number,
-    qnaCountInK: PropTypes.number,
-    upvoteCountInK: PropTypes.number,
-    tokenAwardedInK: PropTypes.number,
+    expertCount: PropTypes.number.isRequired,
+    qnaCountInK: PropTypes.number.isRequired,
+    upvoteCountInK: PropTypes.number.isRequired,
+    tokenAwardedInK: PropTypes.number.isRequired,
   };
   constructor(props) {
     super(props);

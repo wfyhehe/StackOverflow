@@ -9,16 +9,16 @@ export default class CenterPage extends Component {
   render() {
     return (
       <div className="stackoverflow-center-page">
-        <Layout>
-          <Header className="stackoverflow-center-page-banner-wrapper">
-            <img className="stackoverflow-center-page-banner-image" src="/banner.jpg" alt="banner"/>
-          </Header>
+        <Header className="stackoverflow-center-page-header">
+          <img className="stackoverflow-center-page-banner-image" src="/banner.jpg" alt="banner" />
+        </Header>
+        <Layout className="stackoverflow-center-page-layout">
           <Content>
             <Router />
-            <Sider>
-              <About />
-            </Sider>
           </Content>
+          <Sider>
+            <About />
+          </Sider>
         </Layout>
       </div>
     );

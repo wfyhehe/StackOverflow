@@ -1,5 +1,21 @@
+.stackoverflow-center-page-header.ant-layout-header {
+  height: unset;
+  padding: unset;
+  color: unset;
+  line-height: unset;
+  background: unset;
+}
+
 .stackoverflow-center-page-banner-image {
-  width: 86%;
-  margin: 56px 7% 0 7%;
+  width: 70%;
+  margin: 50px 15% 0 15%;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: 0 15%; /* try 20px 10px */
   border-radius: 32px;
+}
+
+.stackoverflow-center-page-layout {
+  width: 70%;
+  margin: 40px 15%;
 }
