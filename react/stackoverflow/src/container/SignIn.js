@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 
 export default class SignIn extends Component {
   componentDidMount() {
+    console.log('mounted signin');
     const next = this.getNext();
     if (next && next === '/post') {
       message.info('Sign in to ask a question');
@@ -18,7 +19,7 @@ export default class SignIn extends Component {
   }
 
   onFinish = valueObj => {
-    signIn(valueObj.username, valueObj.password).then(data => {
+    signIn(valueObj.email_or_username, valueObj.password).then(data => {
       localStorage.setItem('token', data.data.token);
       window.location.href = this.getNext();
     }).catch(err => {
@@ -39,9 +40,13 @@ export default class SignIn extends Component {
           autoComplete="off"
         >
           <Form.Item
-            label="Username"
-            name="username"
-            rules={[{required: true, message: "Please input your username!"}]}
+            label="Email"
+            name="email_or_username"
+            rules={[{
+              required: true, message: "Please input your email"
+            }, {
+              type: 'email', message: "Invalid email format"
+            }]}
           >
             <Input />
           </Form.Item>

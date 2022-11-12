@@ -15,7 +15,7 @@ export default class TopExperts extends Component {
 
   render() {
     const expertList = this.props.topExperts.map(expert => (
-      <UserBrief userDetail={expert} showQA={false} />
+      <UserBrief key={expert.id} userDetail={expert} showQA={false} />
     ))
     return (
       <Card

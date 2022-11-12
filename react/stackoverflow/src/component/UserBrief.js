@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default class UserBrief extends Component {
   static propTypes = {
-    userDetail: PropTypes.object.isRequired,
+    userDetail: PropTypes.object,
     /* qa: x answers, x questions, non-qa: 47 ups, collected */
     showQA: PropTypes.bool.isRequired,
   };

@@ -22,6 +22,7 @@ export default class QuestionList extends Component {
   render() {
     const listQuestions = this.state.questions.map(question =>
       <QuestionCard
+        key={question.id}
         title={question.title}
         content={question.content}
         author={question.author}

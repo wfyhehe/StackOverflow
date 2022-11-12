@@ -25,18 +25,22 @@ export default class CenterPage extends Component {
 
   getHardCodeExperts = () => {
     return [{
+      id: 1,
       first_name: 'Pseudo Near Expert',
       up_amount: 47,
       avatar: '/moonbird.png',
     }, {
+      id: 2,
       first_name: 'Near Expert',
       up_amount: 47,
       avatar: '/moonbird.png',
     }, {
+      id: 3,
       first_name: 'Bitcoin Maxi',
       up_amount: 47,
       avatar: '/moonbird.png',
     }, {
+      id: 4,
       first_name: 'Ethereum Maxi',
       up_amount: 47,
       avatar: '/moonbird.png',
@@ -54,21 +58,14 @@ export default class CenterPage extends Component {
           <Content className="stackoverflow-center-page-content">
             <Router />
           </Content>
-          {this.state.isMobile ? (<Content
-              className="stackoverflow-center-page-content"
-              breakpoint="sm"
-              onBreakpoint={broken => {
-                this.setState({isMobile: broken});
-              }}
-            >
+          {this.state.isMobile ? (
+            <Content className="stackoverflow-center-page-content">
               <About expertCount={246} qnaCountInK={100} upvoteCountInK={50}
                      tokenAwardedInK={145} />
               <TopExperts topExperts={this.getHardCodeExperts()} />
             </Content>
           ) : (
-            <Sider
-              className="stackoverflow-center-page-sider"
-            >
+            <Sider className="stackoverflow-center-page-sider">
               <About expertCount={246} qnaCountInK={100} upvoteCountInK={50}
                      tokenAwardedInK={145} />
               <TopExperts topExperts={this.getHardCodeExperts()} />

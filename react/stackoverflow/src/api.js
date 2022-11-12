@@ -1,8 +1,8 @@
 import axios from './provider';
 
-export function signIn(username, password) {
+export function signIn(email_or_username, password) {
   return axios.post('/api/token/', {
-    username, password
+    email_or_username, password
   });
 }
 
